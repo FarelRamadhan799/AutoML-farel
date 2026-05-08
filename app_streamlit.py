@@ -495,3 +495,202 @@ with tab1:
                 buffer,
                 "model.joblib"
             )
+    # =========================
+# TAB 2 - TENTANG
+# =========================
+with tab2:
+
+    st.header("📘 Tentang AutoML")
+
+    st.write("""
+    AutoML (Automated Machine Learning) adalah teknologi yang membantu proses
+    pembuatan model machine learning secara otomatis tanpa perlu melakukan
+    coding yang rumit.
+
+    Dengan AutoML, pengguna dapat melakukan:
+    - Upload dataset
+    - Preprocessing data otomatis
+    - Training model machine learning
+    - Evaluasi performa model
+    - Prediksi data baru
+
+    Semua proses tersebut dilakukan dalam satu workflow yang sederhana
+    dan mudah digunakan.
+    """)
+
+    st.subheader("🤖 Apa Itu Machine Learning?")
+
+    st.write("""
+    Machine Learning adalah cabang dari Artificial Intelligence (AI)
+    yang memungkinkan komputer belajar dari data untuk membuat prediksi
+    atau keputusan secara otomatis.
+
+    Contoh penggunaan machine learning:
+    - Prediksi harga rumah
+    - Klasifikasi email spam
+    - Prediksi kelulusan siswa
+    - Prediksi penjualan
+    - Sistem rekomendasi
+    """)
+
+    st.subheader("🚀 Fungsi AutoML Web App")
+
+    st.write("""
+    Aplikasi ini membantu pengguna untuk:
+
+    ✅ Upload dataset CSV  
+    ✅ Analisis data otomatis  
+    ✅ Visualisasi data  
+    ✅ Training beberapa model machine learning  
+    ✅ Evaluasi model otomatis  
+    ✅ Membandingkan performa model  
+    ✅ Prediksi data baru  
+    ✅ Download model siap pakai  
+
+    Aplikasi ini mendukung:
+    - Classification
+    - Regression
+    """)
+
+    st.subheader("⚙️ Algoritma yang Digunakan")
+
+    st.write("""
+    ### Classification
+    - Logistic Regression
+    - Decision Tree Classifier
+    - Random Forest Classifier
+
+    ### Regression
+    - Linear Regression
+    - Decision Tree Regressor
+    - Random Forest Regressor
+    """)
+
+    st.subheader("📊 Evaluasi Model")
+
+    st.write("""
+    Untuk Classification:
+    - Accuracy
+    - Confusion Matrix
+    - Classification Report
+
+    Untuk Regression:
+    - R2 Score
+    - MAE (Mean Absolute Error)
+    - MSE (Mean Squared Error)
+    """)
+
+# =========================
+# TAB 3 - CARA PAKAI
+# =========================
+with tab3:
+
+    st.header("📖 Cara Menggunakan AutoML")
+
+    st.subheader("1️⃣ Upload Dataset")
+
+    st.write("""
+    Upload dataset dalam format CSV.
+
+    Tips dataset:
+    - Pastikan memiliki header kolom
+    - Hindari terlalu banyak missing value
+    - Gunakan data yang relevan
+    """)
+
+    st.subheader("2️⃣ Data Overview")
+
+    st.write("""
+    Setelah dataset diupload, sistem akan menampilkan:
+    - Tabel dataset
+    - Statistik data
+    - Missing value
+
+    Tahap ini membantu memahami kondisi dataset sebelum training.
+    """)
+
+    st.subheader("3️⃣ Visualisasi Data")
+
+    st.write("""
+    Anda dapat:
+    - Melihat distribusi data
+    - Melihat heatmap korelasi
+
+    Visualisasi membantu memahami pola data.
+    """)
+
+    st.subheader("4️⃣ Pilih Target")
+
+    st.write("""
+    Target adalah kolom yang ingin diprediksi.
+
+    Contoh:
+    - Classification → Status Kelulusan
+    - Regression → Harga Rumah
+    """)
+
+    st.subheader("5️⃣ Pilih Kolom Ordinal")
+
+    st.write("""
+    Pilih kolom ordinal jika memiliki urutan.
+
+    Contoh:
+    - Rendah
+    - Sedang
+    - Tinggi
+    """)
+
+    st.subheader("6️⃣ Training Model")
+
+    st.write("""
+    Klik tombol Train AutoML.
+
+    Sistem akan:
+    - Melakukan preprocessing
+    - Melatih beberapa model
+    - Membandingkan performa model
+    - Memilih model terbaik
+    """)
+
+    st.subheader("7️⃣ Evaluasi Model")
+
+    st.write("""
+    Sistem akan menampilkan evaluasi model secara otomatis.
+
+    Classification:
+    - Accuracy
+    - Confusion Matrix
+    - Classification Report
+
+    Regression:
+    - R2 Score
+    - MAE
+    - MSE
+    """)
+
+    st.subheader("8️⃣ Prediction")
+
+    st.write("""
+    Masukkan data baru untuk melakukan prediksi.
+
+    Untuk classification:
+    - Sistem akan menampilkan hasil prediksi
+    - Menampilkan tingkat keyakinan model
+    """)
+
+    st.subheader("9️⃣ Download Model")
+
+    st.write("""
+    Model terbaik dapat didownload dalam format .joblib
+    dan digunakan kembali tanpa training ulang.
+    """)
+
+    st.subheader("🎯 Tips Penggunaan")
+
+    st.write("""
+    - Gunakan dataset yang bersih
+    - Hindari terlalu banyak missing value
+    - Pilih target dengan benar
+    - Gunakan fitur yang relevan
+    - Semakin baik data, semakin baik model
+    """)
